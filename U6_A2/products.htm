@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html>
+<body style="background-color: #301934;">
+<body style="font-color: #FFFFFF;">
+
+<title>Products - Celtec games</title>
+<body>
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+<style>
+    .image-property {
+        margin: 20px; /* gives the images a gap inbetween them */
+        border-radius: 15px; /* rounds the images */
+        width: 100%; /* makes the width 100% */
+    }
+    .align { /* aligns images next to eachother */
+        width: 40px; /* changes the width */
+        height: auto; /* makes the height automatic */
+        vertical-align: middle;
+        margin-right: 10px; /* gives the image a gap on the right */
+    }
+
+    h1 { /* Header 1 properties */
+        font-size: 60px;
+        font-family: Rubik;, sans-serif;
+    }
+
+    h2 { /* Header 2 properties */
+        font-size: 28px;
+	font-family: Rubik;, sans-serif;
+    }
+
+    h3 { /* Header 3 properties */
+        font-size: 25px;
+	font-family: Rubik;, sans-serif;
+    }
+
+
+.product-grid {
+  display: grid; /* creates a grid */
+  grid-template-columns: repeat(3, 1fr); /* creates a row of 3 products */
+  gap: 20px; /* creates a gap inbetween products */ 
+}
+
+.product {
+  background-color: #2c1a3b; /* sets a purple background colour for the product description
+  border-radius: 8px; /* makes the products container have rounded corners */
+  overflow: hidden; /* stops the products images from overflowing */
+  transition: transform 0.3s ease; /* creates a transition when hovering over products */
+}
+
+.product img {
+  width: 100%; /* sets the width to 100% of the max */
+  height: auto; /* sets the height to be automatic */
+}
+
+.product-info {
+  padding: 15px; /* sets the size of the space that the text is on */
+  text-align: center; /* aligns the text to the center of the padding */
+}
+
+.product-title {
+  font-size: 27px; /* sets the font size of the product title */
+  margin-bottom: 20px; /* adds space under the products */ 
+}
+
+.product-description {
+  font-size: 18px; /* sets the font size of the product description */ 
+  color: #FFFFFF; /* sets the font colour of the product description */
+  font-family: Rubik;, sans-serif; /* font */
+}
+
+.product:hover {
+  transform: scale(1.05); /* makes the product go bigger on hover */
+}
+
+  </style>
+<img src="assets/banner.png" class="image-property" alt="Company banner" height="425"> <!--company banner-->
+<div class="image-gap">
+<a href="index.htm">
+<img src="assets/Homebutton.png" class="highlight image-property" width="280" height="125" alt="home button"> <!--button that leads to home page-->
+</a>
+<a href="blog.htm">
+<img src="assets/Blogbutton.png" class="highlight image-property" width="280" height="125" alt="blog button"> <!--button that leads to blog page-->
+</a>
+<a href="about.htm">
+<img src="assets/Aboutbutton.png" class="highlight image-property" width="280" height="125" alt="about button"> <!--button that leads to about page-->
+</a>
+<a href="contact.htm">
+<img src="assets/Contactbutton.png" class="highlight image-property" width="280" height="125" alt="contact button"> <!--button that leads to contact page-->
+</a>
+<a href="products.htm">
+<img src="assets/Productsbutton.png" class="highlight image-property" width="280" height="125" alt="products button"> <!--button that leads to products page-->
+</a>
+</div>
+<style>
+        body {
+            color: #FFFFFF;
+        }
+    </style>
+<style>
+        .content {
+            background-color: #642c73; /* changes content background colour */
+            padding: 20px; /* changes padding of  content background */
+            margin: 15px; /* adds space between the content background and the side of the screen */
+            border-radius:10px; /* rounds corner of content backround */
+        }
+    </style>
+<style>
+        .highlight:hover { 
+            filter: brightness(1.5); /* increases brightness on hover */
+            transform: scale(1.05); /* changes size on hover */
+        }
+</style>
+<style>
+        .image-gap { 
+            gap: 100px; /* creates gap between image */
+            display: flex; /* aligns images */
+        }
+    </style>
+
+<div class="content">
+<div id="page">
+<div id="navigation">
+</div>
+
+<h1>Celtec games</h1>
+<div class="product-grid">
+  <div class="product">
+    <img src="assets/surviveimage.png" alt="Abandned city">
+    <div class="product-info">
+      <h2 class="product-title">Survive the Subjects</h2>
+      <p class="product-description">A post apocolyptic zombie game set in the city of Manchester. Engage in the thrilling story of surviving the end of the world and collect resources to craft items and gadgets that may help you navigate the city. You will need them.</p>
+    </div>
+  </div>
+
+  <div class="product">
+    <img src="assets/phantomimage.png" alt="Dark mansion">
+    <div class="product-info">
+      <h2 class="product-title">Phantom Fear</h2>
+      <p class="product-description">A horror game that focuses on reality and perception. Engage with disturbing settings and unsettling experiences. The Cavendish Manor was once the home of the wealthy Cavendish family, but tragedy struck one night when they suddenly got sick. As a journalist you deicde to find out the real truth.</p>
+    </div>
+  </div>
+
+  <div class="product">
+    <img src="assets/warpimage.png" alt="Neon Car">
+    <div class="product-info">
+      <h2 class="product-title">Warp Drifters</h2>
+      <p class="product-description">A fast-paced racing game that keeps you on your toes. Hop in the drivers seat and drift through chaotic race courses. Race friends and foes on the neon racetracks with diverse powerups and use them to slow down your opponents to help you become a warp drifters champion.</p>
+    </div>
+  </div>
+
+  <div class="product">
+    <img src="assets/warriorsimage.png" alt="Mythical landscape">
+    <div class="product-info">
+      <h2 class="product-title">Warriors of Ascendia</h2>
+      <p class="product-description">An action-packed game with fast paced combat and stunning visuals. Explore Ascendia and battle it's most powerful creatures. Fight in extreme battlegrounds with some of the most exciting foes and challenging enemy battles where you will find mythical abilities which will make you undefeatable.</p>
+    </div>
+  </div>
+
+  <div class="product">
+    <img src="assets/noimage.png" alt="Dark alleyway">
+    <div class="product-info">
+      <h2 class="product-title">No Return</h2>
+      <p class="product-description">A gripping horror adventure game with a tense atmosphere. Dive in to the eerie environments and face supernatural entities where encounters will make your skin crawl and your toes curl. Can you escape the grasp of the entities that haunt you? Find out now.</p>
+    </div>
+  </div>
+
+  <div class="product">
+    <img src="assets/ghostimage.png" alt="Neon ninja">
+    <div class="product-info">
+      <h2 class="product-title">Ghost Phaser</h2>
+      <p class="product-description">A 3D platformer where you can power up your character limitlessly. Help the ghost phaser reach his objective through a cyberpunk setting and take down their enemies that become obstacles. The city of the ghost is waiting.</p>
+    </div>
+  </div>
+  <div class="product">
+    <img src="assets/echoesimage.png" alt="Mountain landscape">
+    <div class="product-info">
+      <h2 class="product-title">Echoes of Midgard</h2>
+      <p class="product-description">An exciting noridc adventure game for players looking for a true adventure filled with action. Enter midgard and discover it's myths and mysteries. Explore the realm of midgard and uncover mysteries that can't be solved by regular explorers which will make you a legend of midgard.</p>
+    </div>
+  </div>
+  <div class="product">
+    <img src="assets/theimage.png" alt="Deserted village">
+    <div class="product-info">
+      <h2 class="product-title">The Black War</h2>
+      <p class="product-description">A FPS game that challenges players and creates an immersive war like environment. Start battling other players in the land of military encounters and top secret missions that only you are trusted to complete.</p>
+    </div>
+  </div>
+  <div class="product">
+    <img src="assets/brokenimage.png" alt="Red lightning clouds">
+    <div class="product-info">
+      <h2 class="product-title">Broken Sky</h2>
+      <p class="product-description">A futuristic country setting where the earth is being invaded. Join amazing characters in protecting the world from deadly monsters that have come to attack the earth. Ensure that the world is safe from the creatures of the sky and team up with friends to conquer challenges.</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
