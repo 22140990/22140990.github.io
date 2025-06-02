@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="This page is all about Celtec Games and our journey as indie game developers.">
+  <title>About us - Celtec Games</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #301934;
+      color: #FFFFFF;
+      font-family: 'Rubik', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .image-property {
+      margin: 20px;
+      border-radius: 15px;
+      width: 100%;
+    }
+
+    .nav-button {
+      width: 100%;
+      max-width: 280px;
+      height: auto;
+      border-radius: 15px;
+    }
+
+    .highlight:hover {
+      filter: brightness(1.5);
+      box-shadow: 0px 0px 10px rgba(188, 109, 222, 0.5);
+      transform: scale(1.05);
+    }
+
+    h1 {
+      font-size: 60px;
+    }
+
+    h2 {
+      font-size: 28px;
+    }
+
+    h3 {
+      font-size: 25px;
+    }
+
+    .image-gap {
+      display: flex;
+      gap: 100px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+
+    .content {
+      background-color: #642c73;
+      padding: 20px;
+      margin: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .container {
+      display: flex;
+      align-items: flex-start;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .text-content {
+      flex: 1;
+      max-width: 60%;
+    }
+
+    .image-container {
+      flex: 1;
+      max-width: 800px;
+      margin: 20px;
+      flex-shrink: 0;
+    }
+
+    .image-container img {
+      width: 100%;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .text-content,
+      .image-container {
+        max-width: 100%;
+      }
+
+      .image-gap {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .nav-button {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="assets/banner.png" class="image-property" alt="Company banner" height="425">
+
+  <div class="image-gap">
+    <a href="index.htm">
+      <img src="assets/Homebutton.png" class="highlight nav-button" alt="Home button">
+    </a>
+    <a href="blog.htm">
+      <img src="assets/Blogbutton.png" class="highlight nav-button" alt="Blog button">
+    </a>
+    <a href="about.htm">
+      <img src="assets/Aboutbutton.png" class="highlight nav-button" alt="About button">
+    </a>
+    <a href="contact.htm">
+      <img src="assets/Contactbutton.png" class="highlight nav-button" alt="Contact button">
+    </a>
+    <a href="products.htm">
+      <img src="assets/Productsbutton.png" class="highlight nav-button" alt="Products button">
+    </a>
+  </div>
+
+  <div class="content">
+    <h1>Celtec Games</h1>
+    <h1>About Celtec Games</h1>
+    <div class="container">
+      <div class="text-content">
+        <h2>
+          At Celtec Games, we are a passionate and innovative independent game development studio based in North East Wales, UK. 
+          We specialise in creating original titles for desktop, mobile and console platforms, such as Ghost Phaser, No Return, Warp Drifters and many more. 
+          We create games that entertain and educate audiences of all ages.
+        </h2>
+        <h2>
+          At Celtec, we believe that games are more than entertainment — they are a gateway to imagination, learning, and creativity. 
+          Our adventures spark creativity in young minds and offer thrilling challenges that keep players on the edge of their seats. 
+          Whether it's our platformers, driving games, or FPS (first-person shooter) games, our worlds captivate and inspire.
+        </h2>
+
+        <h1>Our Mission</h1>
+        <h2>
+          From humble beginnings, we’ve grown into a respected name in the gaming industry, having released many titles since our company's launch. 
+          Our journey has brought together a team of dedicated developers, artists, and storytellers with a shared goal of pushing the boundaries of gaming.
+        </h2>
+        <h2>
+          Ask anyone at Celtec what the secret to creating games is, and they’ll tell you: it’s all about creativity, vision, technology, 
+          and the strong sense of belonging that fuels our team. We’ve reached where we are today by empowering our people and igniting our passion 
+          to develop the best cross-platform experiences in the UK — and beyond!
+        </h2>
+
+        <h1>What We Stand For</h1>
+        <h2>
+          <ul>
+            <li><strong>Creativity and Innovation</strong> – Every game we create is built with original ideas and unique storylines.</li>
+            <li><strong>Quality and Excellence</strong> – We hold the highest standards to ensure each title impresses players.</li>
+            <li><strong>Community and Engagement</strong> – Our players are at the heart of what we do. We listen, learn, and evolve our games based on user feedback.</li>
+            <li><strong>Education and Entertainment</strong> – We believe games should be both fun and educational, challenging the mind while staying enjoyable.</li>
+          </ul>
+        </h2>
+      </div>
+
+      <div class="image-container">
+        <img src="assets/mascot.png" alt="Company Mascot">
+        <iframe src="https://www.youtube.com/embed/Uz32_CY47Ys" title="Video Presentation" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
