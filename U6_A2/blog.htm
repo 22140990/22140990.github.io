@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog - Celtec games</title> <!-- Page title -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"> <!-- Import Rubik font -->
+
+  <style>
+    body {
+      background-color: #301934; /* Sets background color */
+      color: #FFFFFF; /* Sets default text color */
+      font-family: 'Rubik', sans-serif; /* Applies Rubik font */
+      margin: 0;
+      padding: 0;
+    }
+
+    .image-property { 
+      margin: 20px; /* gives the images a gap inbetween them */
+      border-radius: 15px; /* rounds the images */
+      width: 100%; /* makes the width 100% */
+      height: auto; /* keeps aspect ratio */
+    }
+
+    .nav-button {
+      width: 100%;
+      max-width: 280px; /* Keeps buttons from being too large */
+      height: auto; /* Keeps image aspect ratio */
+      border-radius: 15px;
+    }
+
+    .highlight:hover { 
+      filter: brightness(1.5); /* increases brightness on hover */
+      transform: scale(1.05); /* changes size on hover */
+    }
+
+    h1 { /* Header 1 properties */
+      font-size: 60px;
+      font-family: 'Rubik', sans-serif;
+    }
+
+    h2 { /* Header 2 properties */
+      font-size: 30px;
+      font-family: 'Rubik', sans-serif;
+    }
+
+    h3 { /* Header 3 properties */
+      font-size: 25px;
+      font-family: 'Rubik', sans-serif;
+    }
+
+    .image-gap { 
+      gap: 40px; /* creates gap between image */
+      display: flex; /* aligns images */
+      flex-wrap: wrap; /* wraps for smaller screens */
+      justify-content: center; /* center-aligns buttons */
+      margin: 20px;
+    }
+
+    .content {
+      background-color: #642c73; /* changes content background colour */
+      padding: 40px; /* changes padding of content background */
+      margin: 15px; /* adds space between content and edge of screen */
+      border-radius: 10px; /* rounds corner of content background */
+      box-sizing: border-box;
+    }
+
+    .container { /* container for image slider */
+      display: flex; /* makes the image flex around the text */
+      flex-wrap: wrap; /* stacks on smaller screens */
+      gap: 20px; /* creates a gap between elements */
+    }
+
+    .text { 
+      flex: 1; /* takes available space */
+      min-width: 280px;
+      max-width: 60%; /* max width of text section */
+    }
+
+    .slider {
+      width: 100%; /* makes the slider 100% of the max width */
+      max-width: 800px; /* max width of the slider */
+      flex-shrink: 0; /* stops the image slider from shrinking */ 
+      overflow: hidden; /* stops the images from overflowing */
+      position: relative;
+      box-sizing: border-box;
+    }
+
+    .slides {
+      display: flex; /* add flex to the slides */
+      transition: transform 0.5s ease; /* adds a transition effect */
+    }
+
+    .slide {
+      min-width: 100%; /* sets minimum image width so it always fits */
+      max-width: 450px;
+      box-sizing: border-box;
+    }
+
+    .slide img {
+      width: 100%; /* sets the slide images to 100% width */
+      height: auto; /* keeps aspect ratio */
+    }
+
+    .buttons { 
+      margin-top: 10px; /* gives a margin on top of the button */
+      text-align: center; /* centers the buttons */
+    }
+
+    @media screen and (max-width: 768px) {
+      .container {
+        flex-direction: column; /* stacks text and slider vertically */
+      }
+
+      .text, .slider {
+        max-width: 100%; /* full width on small screens */
+      }
+
+      .image-gap {
+        flex-direction: column; /* stack buttons vertically */
+        align-items: center;
+        gap: 20px;
+      }
+
+      .nav-button {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <img src="assets/banner.png" class="image-property" alt="Company banner" height="425"> <!--company banner-->
+
+  <div class="image-gap"> <!-- navigation buttons -->
+    <a href="index.htm">
+      <img src="assets/Homebutton.png" class="highlight nav-button" alt="home button"> <!--button that leads to home page-->
+    </a>
+    <a href="blog.htm">
+      <img src="assets/Blogbutton.png" class="highlight nav-button" alt="blog button"> <!--button that leads to blog page-->
+    </a>
+    <a href="about.htm">
+      <img src="assets/Aboutbutton.png" class="highlight nav-button" alt="about button"> <!--button that leads to about page-->
+    </a>
+    <a href="contact.htm">
+      <img src="assets/Contactbutton.png" class="highlight nav-button" alt="contact button"> <!--button that leads to contact page-->
+    </a>
+    <a href="products.htm">
+      <img src="assets/Productsbutton.png" class="highlight nav-button" alt="products button"> <!--button that leads to products page-->
+    </a>
+  </div>
+
+  <div class="content">
+    <div id="page">
+      <h1>Celtec games</h1>
+      <h1>Blog - The black war will become a huge franchise?</h1>
+
+      <div class="container"> <!-- container for text and slider -->
+        <div class="text"> <!-- blog text content -->
+          <h2>The Black War, is a huge fan favourite by now, for fans of FPS games, this is definitely the 1 game that will have you engaged in the battlefield, with comms and amazing sound output... more stories to be created for the game which has fans extremely excited. </h2>
+
+          <h1>Blog - Cliffhanger for Survive the Subjects!?</h1>
+          <h2>Players have been waiting for this truly amazing upcoming story of Survive the Subjects... excitement for the launch of Survive the Subjects: Part 2.</h2>
+
+          <h1>Blog - Scariest horror game of 2025?</h1>
+          <h2>The game Phantom Fears, by Celtec games, was recently released and fans of the horror genre are going crazy... we can safely say that Phantom Fears will earn the award for the best horror game of 2025.</h2>
+        </div>
+
+        <div class="slider"> <!-- image slider -->
+          <div class="slides">
+            <div class="slide"><img src="assets/thelogo.png" alt="The Black War Logo"></div>
+            <div class="slide"><img src="assets/survivelogo.png" alt="Survive the Subjects Logo"></div>
+            <div class="slide"><img src="assets/phantomlogo.png" alt="Phantom Fears Logo"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button onclick="moveSlide(-1)">Previous</button> <!-- creates previous button -->
+        <button onclick="moveSlide(1)">Next</button> <!-- creates next button -->
+      </div>
+
+      <script>
+        let slideIndex = 0;
+
+        function moveSlide(step) {
+          const slides = document.querySelectorAll('.slide');
+          const totalSlides = slides.length;
+          slideIndex = (slideIndex + step + totalSlides) % totalSlides;
+          document.querySelector('.slides').style.transform = `translateX(-${slideIndex * 100}%)`;
+        }
+      </script>
+
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home - Celtec games</title> <!-- Page title -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"> <!-- Import Rubik font -->
+
+  <style>
+    body {
+      background-color: #301934; /* Sets background color */
+      color: #FFFFFF; /* Sets default text color */
+      font-family: 'Rubik', sans-serif; /* Applies Rubik font */
+      margin: 0;
+      padding: 0;
+    }
+
+    .image-property {
+      margin: 20px; /* Adds space around images */
+      border-radius: 15px; /* Rounds image corners */
+      width: 100%; /* Sets full width */
+    }
+
+    .nav-button {
+      width: 100%;
+      max-width: 280px; /* Keeps buttons from being too large */
+      height: auto; /* Keeps image aspect ratio */
+      border-radius: 15px;
+    }
+
+    .highlight:hover { 
+      filter: brightness(1.5); /* increases brightness on hover */
+      transform: scale(1.05); /* scales size slightly on hover */
+    }
+
+    h1 {
+      font-size: 60px; /* Header 1 size */
+    }
+
+    h2 {
+      font-size: 28px; /* Header 2 size */
+    }
+
+    h3 {
+      font-size: 25px; /* Header 3 size */
+    }
+
+    .image-gap { 
+      display: flex; /* aligns images horizontally */
+      flex-wrap: wrap; /* wraps buttons on smaller screens */
+      justify-content: center; /* centers buttons */
+      gap: 40px; /* spacing between buttons */
+      margin: 20px;
+    }
+
+    .content {
+      background-color: #642c73; /* content background colour */
+      padding: 40px; /* padding inside content block */
+      margin: 15px; /* space around content block */
+      border-radius: 10px; /* rounds corners */
+      box-sizing: border-box; 
+    }
+
+    .container {
+      display: flex; /* lays out text and slider side by side */
+      flex-wrap: wrap; /* stacks on small screens */
+      gap: 20px; /* space between text and slider */
+    }
+
+    .text {
+      flex: 1; /* takes available space */
+      min-width: 280px;
+      max-width: 60%; /* max width of text section */
+    }
+
+    .slider {
+      width: 100%; /* takes up full container width */
+      max-width: 800px; /* max slider width */
+      flex-shrink: 0; /* prevents shrinking */
+      overflow: hidden; /* hides overflowing images */
+      position: relative;
+      box-sizing: border-box;
+    }
+
+    .slides {
+      display: flex; /* arranges slides in a row */
+      transition: transform 0.5s ease; /* smooth slide transition */
+    }
+
+    .slide {
+      min-width: 100%; /* ensures slide fits container */
+      max-width: 450px;
+      box-sizing: border-box;
+    }
+
+    .slide img {
+      width: 100%; /* makes image fill slide */
+      height: auto; /* preserves aspect ratio */
+    }
+
+    .buttons { 
+      margin-top: 10px; /* space above buttons */
+      text-align: center; /* centers buttons */
+    }
+
+    .image-under-text {
+      width: 60%; /* sets width of explore image */
+      margin-top: 20px; /* top spacing */
+      margin-bottom: 20px; /* bottom spacing */
+    }
+
+    .image-under-text img {
+      width: 100%; /* image fills container */
+      margin: 20px auto; /* vertical margin */
+      display: block; /* centers image */
+    }
+
+    @media screen and (max-width: 768px) {
+      .container {
+        flex-direction: column; /* stacks elements vertically */
+      }
+
+      .text,
+      .slider {
+        max-width: 100%; /* full width on small screens */
+      }
+
+      .image-gap {
+        flex-direction: column; /* stacks nav buttons vertically */
+        align-items: center;
+        gap: 20px;
+      }
+
+      .nav-button {
+        max-width: 100%;
+      }
+
+      .image-under-text {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <img src="assets/banner.png" class="image-property" alt="Company banner" height="425"> <!--company banner-->
+
+  <div class="image-gap"> <!-- navigation button container -->
+    <a href="index.htm">
+      <img src="assets/Homebutton.png" class="highlight nav-button" alt="home button"> <!-- Home -->
+    </a>
+    <a href="blog.htm">
+      <img src="assets/Blogbutton.png" class="highlight nav-button" alt="blog button"> <!-- Blog -->
+    </a>
+    <a href="about.htm">
+      <img src="assets/Aboutbutton.png" class="highlight nav-button" alt="about button"> <!-- About -->
+    </a>
+    <a href="contact.htm">
+      <img src="assets/Contactbutton.png" class="highlight nav-button" alt="contact button"> <!-- Contact -->
+    </a>
+    <a href="products.htm">
+      <img src="assets/Productsbutton.png" class="highlight nav-button" alt="products button"> <!-- Products -->
+    </a>
+  </div>
+
+  <div class="content"> <!-- main content section -->
+    <div id="page">
+      <h1>Celtec games</h1> <!-- Main heading -->
+
+      <div class="container"> <!-- text and slider section -->
+        <div class="text">
+          <h2>Welcome to Celtec games, where we entertain, educate and bring people together. From thrilling adventures to family-friendly experiences, we blend creativity technology and passion to craft imaginative worlds that enchants players of all ages</h2>
+          <h3>These pages will help you discover truly amazing entertainment and meaningful experiences. Every game we develop is a unique journey filled with creativity, passion, and purpose. Our games entertain and challenge players on many platforms, and hold many different genres of games, perfect for anybody of any age.</h3>
+          <h3>Click explore to find out more about our games and projects!</h3>
+
+          <a href="products.htm">
+            <img src="assets/explore.png" class="image-under-text" alt="explore button"> <!-- Explore button -->
+          </a>
+        </div>
+
+        <div class="slider"> <!-- image slider -->
+          <div class="slides">
+            <div class="slide"><img src="assets/purplegaming.png" alt="Gaming"></div> <!-- Slide 1 -->
+            <div class="slide"><img src="assets/indeximage1.png" alt="Mountain"></div> <!-- Slide 2 -->
+            <div class="slide"><img src="assets/castle.png" alt="Castle"></div> <!-- Slide 3 -->
+            <div class="slide"><img src="assets/abandonedcity.png" alt="Abandoned City"></div> <!-- Slide 4 -->
+          </div>
+        </div>
+      </div>
+
+      <div class="buttons"> <!-- slider navigation buttons -->
+        <button type="button" onclick="moveSlide(-1); return false;">Previous</button> <!-- Previous slide -->
+        <button type="button" onclick="moveSlide(1); return false;">Next</button> <!-- Next slide -->
+      </div>
+
+      <script>
+        // JavaScript for slider functionality
+        let slideIndex = 0;
+
+        function moveSlide(step) {
+          const slidesContainer = document.querySelector('.slides');
+          const slideWidth = document.querySelector('.slide').clientWidth;
+
+          slideIndex += step;
+
+          if (slideIndex < 0) {
+            slideIndex = slidesContainer.children.length - 1;
+          } else if (slideIndex >= slidesContainer.children.length) {
+            slideIndex = 0;
+          }
+
+          slidesContainer.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
+        }
+      </script>
+
+    </div>
+  </div>
+
+</body>
+</html>
