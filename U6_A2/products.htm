@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mobile responsiveness -->
+  <meta name="description" content="The page to view all of Celtec's games and products to find an educating game suitable for you and your family">
+  <meta name="keywords" content="Celtec Games, educational games, family games, action games, horror games, racing games, platformers">
+  <meta name="author" content="Celtec Games">
+  <title>Products - Celtec Games</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #301934; /* Sets background color */
+      color: #FFFFFF; /* Default text color */
+      font-family: 'Rubik', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .image-property {
+      margin: 20px;
+      border-radius: 15px;
+      width: 100%;
+    }
+
+    .nav-button {
+      width: 100%;
+      max-width: 280px;
+      height: auto;
+      border-radius: 15px;
+    }
+
+    .highlight:hover {
+      filter: brightness(1.5);
+      transform: scale(1.05);
+    }
+
+    h1 {
+      font-size: 60px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 28px;
+    }
+
+    h3 {
+      font-size: 25px;
+    }
+
+    .image-gap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin: 20px;
+    }
+
+    .content {
+      background-color: #642c73;
+      padding: 40px;
+      margin: 15px;
+      border-radius: 10px;
+      box-sizing: border-box;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .product {
+      background-color: #2c1a3b;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .product:hover {
+      transform: scale(1.05);
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+    }
+
+    .product-info {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .product-title {
+      font-size: 27px;
+      margin-bottom: 20px;
+    }
+
+    .product-description {
+      font-size: 18px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .product-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .image-gap {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .nav-button {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="assets/banner.png" class="image-property" alt="Company banner" height="425"> <!-- Company banner -->
+
+  <div class="image-gap"> <!-- navigation button container -->
+    <a href="index.htm">
+      <img src="assets/Homebutton.png" class="highlight nav-button" alt="home button"> <!-- Home -->
+    </a>
+    <a href="blog.htm">
+      <img src="assets/Blogbutton.png" class="highlight nav-button" alt="blog button"> <!-- Blog -->
+    </a>
+    <a href="about.htm">
+      <img src="assets/Aboutbutton.png" class="highlight nav-button" alt="about button"> <!-- About -->
+    </a>
+    <a href="contact.htm">
+      <img src="assets/Contactbutton.png" class="highlight nav-button" alt="contact button"> <!-- Contact -->
+    </a>
+    <a href="products.htm">
+      <img src="assets/Productsbutton.png" class="highlight nav-button" alt="products button"> <!-- Products -->
+    </a>
+  </div>
+
+  <div class="content"> <!-- product content section -->
+    <h1>Celtec Games</h1> <!-- Page heading -->
+
+    <div class="product-grid"> <!-- Product grid section -->
+
+      <div class="product">
+        <img src="assets/surviveimage.png" alt="Abandoned city">
+        <div class="product-info">
+          <h2 class="product-title">Survive the Subjects</h2>
+          <p class="product-description">A post-apocalyptic zombie game set in Manchester. Engage in the thrilling story of survival and collect resources to craft gadgets that will help you navigate the city. You’ll need them.</p>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="assets/phantomimage.png" alt="Dark mansion">
+        <div class="product-info">
+          <h2 class="product-title">Phantom Fear</h2>
+          <p class="product-description">A horror game focused on reality and perception. Explore the Cavendish Manor and uncover the truth behind a family's sudden tragedy. A journalist’s nightmare begins.</p>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="assets/warpimage.png" alt="Neon car">
+        <div class="product-info">
+          <h2 class="product-title">Warp Drifters</h2>
+          <p class="product-description">A fast-paced racing game with neon chaos and crazy powerups. Drift, race, and sabotage opponents to become the ultimate warp drifter.</p>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="assets/warriorsimage.png" alt="Mythical landscape">
+        <div class="product-info">
+          <h2 class="product-title">Warriors of Ascendia</h2>
+          <p class="product-description">An action game with stunning visuals and epic battles. Unleash mythical powers to conquer monsters in the realm of Ascendia.</p>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="assets/noimage.png" alt="Dark alleyway">
+        <div class="product-info">
+          <h2 class="product-title">No Return</h2>
+          <p class="product-description">A horror adventure game full of tension and fear. Can you escape the supernatural entities haunting your every step?</p>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="assets/ghostimage.png" alt="Neon ninja">
+        <div class="product-info">
+          <h2 class="product-title">Ghost Phaser</h2>
+          <p class="product-description">A cyberpunk 3D platformer. Power up endlessly and battle your way through enemies to complete your ghostly mission.</p>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="assets/echoesimage.png" alt="Mountain landscape">
+        <div class="product-info">
+          <h2 class="product-title">Echoes of Midgard</h2>
+          <p class="product-description">A Nordic adventure filled with legend and lore. Discover the mysteries of Midgard and forge your own legend.</p>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="assets/theimage.png" alt="Deserted village">
+        <div class="product-info">
+          <h2 class="product-title">The Black War</h2>
+          <p class="product-description">A tactical FPS game set in a war-torn world. Complete secret missions and fight your way to victory in high-stakes encounters.</p>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="assets/brokenimage.png" alt="Red lightning clouds">
+        <div class="product-info">
+          <h2 class="product-title">Broken Sky</h2>
+          <p class="product-description">Earth is under siege. Join heroic defenders and protect the world from alien invaders in this action-packed battle for survival.</p>
+        </div>
+      </div>
+
+    </div> <!-- End product grid -->
+
+  </div> <!-- End content -->
+
+</body>
+</html>
